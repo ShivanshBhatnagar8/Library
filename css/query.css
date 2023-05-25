@@ -1,0 +1,30 @@
+@media (max-width: 66em) {
+  html {
+    font-size: 57%;
+  }
+}
+@media (max-width: 57em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 52em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+  .book-info {
+    width: 65%;
+  }
+  .books {
+    width: 100%;
+    justify-content: center;
+  }
+  .book-btns {
+    justify-content: center;
+  }
+}

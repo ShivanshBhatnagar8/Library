@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <div class="header-section">
+            <h1>Library</h1>
+            <a href="#" class="btn-add">Add Book</a>
+          </div>
+        </div>
+      </header>
+      <section class="book-section">
+        <div class="books"></div>
+      </section>
+    </main>
+    <!-- Popup form to add Books -->
+    <div class="container">
+      <div class="popup hidden">
+        <div class="popup-content hidden scale">
+          <form id="book-form">
+            <label for="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="bookName"
+              placeholder="Title"
+              required
+            />
+            <label for="author">Author</label>
+            <input
+              type="text"
+              id="author"
+              name="authorName"
+              placeholder="Author"
+              required
+            />
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" placeholder="Pages" required />
+            <div class="selection-section">
+              <label for="option" id="option">Have you read it?</label>
+              <select name="option" id="status-option">
+                <option value="Read">Read</option>
+                <option value="NotRead">Not Read</option>
+              </select>
+            </div>
+            <label for="submit"></label>
+            <input type="submit" value="Submit" id="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #d3f9d8;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+header {
+  padding: 4.2rem 2rem;
+  background-color: #69db7c;
+  box-shadow: 1px 5px 5px rgba(14, 14, 14, 0.277);
+}
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 3.6rem;
+  color: #fff8f8;
+  letter-spacing: 0.2rem;
+  margin-left: 8.2rem;
+  text-transform: uppercase;
+}
+.btn-add:link,
+.btn-add:visited {
+  text-decoration: none;
+  border: 4px solid rgb(255, 115, 0);
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1.4rem 2.2rem;
+  background-color: rgb(255, 247, 0);
+  outline-color: #70e000;
+  color: black;
+  box-shadow: 1px 5px 5px rgba(14, 14, 14, 0.277);
+
+  z-index: 1;
+}
+.btn-add:active,
+.btn-add:hover {
+  background-color: rgb(248, 240, 15);
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.6rem;
+  width: 100%;
+  padding: 0 2.4rem;
+}
+.book-info {
+  width: 30%;
+  margin-top: 4rem;
+  padding: 2.6rem 3rem;
+  background-color: #b2f2bb;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 1px 5px 5px rgba(14, 14, 14, 0.277);
+}
+.book-info span {
+  font-size: 2rem;
+}
+.book-info p {
+  font-size: 2.4rem;
+}
+.book-btns {
+  display: flex;
+  gap: 2rem;
+}
+.book-btns a {
+  display: inline-block;
+  padding: 1.4rem 2.2rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  color: black;
+  text-decoration: none;
+}
+.read,
+.not-read {
+  background-color: #05ff2ffb;
+}
+
+.read:hover,
+.not-read:hover {
+  background-color: #08ec17;
+}
+
+.delete-book {
+  background-color: #ff4343;
+  align-self: flex-start;
+}
+.delete-book:hover {
+  background-color: #f92323;
+}
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffe6;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  transition: all 0.2s;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  background-color: #8ce99a;
+  border-radius: 2rem;
+  gap: 0.8rem;
+}
+label {
+  font-size: 2.4rem;
+}
+input {
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 1.2rem 1.2rem;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.selection-section {
+  display: flex;
+  gap: 1.4rem;
+}
+.selection-section label {
+  align-self: center;
+}
+select {
+  display: inline-block;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+
+#submit {
+  background-color: #04ff04;
+}
+#submit:hover {
+  background-color: #06d114;
+}
+
+.hidden {
+  opacity: 0;
+}
+.scale {
+  transform: scale(0.5);
+}
